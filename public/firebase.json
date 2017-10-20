@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "communicando.github.io",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
