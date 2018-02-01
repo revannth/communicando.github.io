@@ -1,0 +1,288 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Communicando</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="{{url_for('static',filename='/js/ie/html5shiv.js')}}"></script><![endif]-->
+		<link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}" />
+		<link rel="shortcut icon" href="{{url_for('static',filename='images/favicon.ico')}}" />
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="{{url_for('home')}}">Communicando</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner" id="menu_test">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="{{url_for('home')}}">Home</a></li>
+								<li><a href="{{url_for('about')}}">About Us</a></li>
+								<li><a href="Our_team1.html">Junior Coordinators</a></li>
+								<li><a href="Our_team2.html">Senior Coordinators</a></li>
+								<li><a href="index_landing.html">Literati 8</a></li>
+								<!--<li><a href="#">Log In</a></li>
+								<li><a href="#">Sign Up</a></li> -->
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<div class="content"></div>
+							<h2 style="font-family: 'Oxygen', sans-serif;">Communicando</strong></h2>
+							<p></a></p>
+						</div>
+					</section>
+
+					
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+
+						<!-- One -->
+							<section id="one" class="wrapper spotlight style2">
+								<div class="inner" id="communicando">
+									<a href="{{url_for('about')}}#communicando" class="image"><img src="{{url_for('static',filename='images/communicando.png')}}" alt=""> </a>
+									<div class="content">
+										<h2 class="major">Who are we?</h2>
+										<p>Communicando is the literary club of CBIT. It was started in 2007 with the aim to give students an opportunity to grow as individuals by enriching their soft skills.</p>
+										<a href="{{url_for('about')}}#Communicando" class="special">Learn more</a>
+									</div>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="wrapper alt spotlight style1">
+								<div class="inner">
+									<a href="{{url_for('about')}}#literati" class="image"><img src ="{{url_for('static',filename='images/literati.png')}}" alt="" /></a>
+									<div class="content" id="Literati">
+										<h2 class="major">What is Literati?</h2>
+										<p>Literati is the annual literary fest of CBIT, conducted by Communicando. It takes place in March every year, and every edition of Literati brings with it an exciting and rewarding array of events. There are a number of competitions conducted, and the events are a mix of time-tested classics and innovative new ideas.</p>
+										<a href="{{url_for('about')}}#literati" class="special">Learn more</a>
+									</div>
+								</div>
+							</section>
+
+						<!-- Three -->
+							<section id="three" class="wrapper spotlight style3">
+								<div class="inner">
+									<a href="#" class="image"><img src="{{url_for('static',filename='images/literati_7.jpg')}}" alt="" /></a>
+									<div class="content">
+										<h2 class="major">Literati 7.0</h2>
+										<p>Literati 7.0 was one of the biggest editions of Literati which was held on March 9th and 10th. It witnessed the participation of over 300  students from colleges all over the city. The events organised ranged from  exciting mystery solving events like "Who Dunnit" to the English debate "Dangal", various events such as "adaalat" were conducted in Hindi and Telugu as well. One of the highlights of Literati 7.0 was a microfiction workshop by Terribly Tiny tales. Fun game stalls and a photo booth was also set up where the participants relaxed and took pictures with funky props.</p>
+										<!--<a href="#" class="special">Learn more</a>-->
+									</div>
+								</div>
+							</section>
+
+						<!-- Four -->
+							<section id="four" class="wrapper alt style4">
+								<div class="inner">
+									<h2 class="major">More than a literary club</h2>
+									<p></p>
+									<section class="features">
+										<article>
+											<a href="{{url_for('about')}}#Cbitmun" class="image"><img src="{{url_for('static',filename='images/cbitmun.jpg')}}" alt="" id="cbitmun" /></a>
+											<h3 class="major">CBITMUN</h3>
+											<p>Back   in   2011   CBIT   MUN   club   was   started   by   a   group   of   debate   enthusiasts   with   the   motto to   set   up,   encourage   and   endorse   Model   United   Nations   Conferences   in   the   city   of Hyderabad.   It   was   Model   United   Nations   Initiative   for   the   first   time   of   its   level   in   the   city   of Hyderabad   under   the   Literary   Club   of   CBIT,   Communicando.</p>
+											<a href="{{url_for('about')}}#Cbitmun" class="special">Learn more</a>
+										</article>
+										<article>
+											<a href="{{url_for('about')}}#transcendent" class="image"><img src="{{url_for('static',filename='images/transcendent.JPG')}}" alt="" id="Transcendent" /></a>
+											<h3 class="major">Transcendent</h3>
+											<p>Transcendent, the college newsletter of CBIT produces editions every year covering all the latest happenings in the college and around the world. Apart from the printed editions, Transcendent also has a weekly bulletin that covers every week's highlights on its Facebook page that is open to everybody.</p>
+											<a href="{{url_for('about')}}#transcendent" class="special">Learn more</a>
+										</article>
+										<article>
+											<a href="{{url_for('about')}}#workshops" class="image"><img src="{{url_for('static',filename='images/ttt.jpg')}}" alt="" /></a>
+											<h3 class="major" id="Workshops">Workshops</h3>
+											<p>We at Communicando believe in constantly growing and making ourselves familiar with the upcoming forms of literary art and that’s why have been actively working towards inviting accomplished personalities from various fields to conduct workshops where the participants get to interact and experiment</p>
+											<a href="{{url_for('about')}}#workshops" class="special">Learn more</a>
+										</article>
+										<article>
+											<a href="{{url_for('about')}}#recent_events" class="image" id="Recent_events"><img src="{{url_for('static',filename='images/recent_events.jpeg')}}" alt="" /></a>
+											<h3 class="major">Recent Events</h3>
+											<p>
+												Communicando has set off this year with a bang. The past few weeks have been exhilarating for us at communicando. We have organized exciting events, each being unique and compelling in its own way.
+											</p>
+											<a href="{{url_for('about')}}#recent_events" class="special">Learn more</a>
+										</article>
+									</section>
+									<ul class="actions">
+										<li><a href="#" class="button">Browse All</a></li>
+									</ul>
+								</div>
+							</section>
+
+							<!-- Five -->
+
+							<section id="four" class="wrapper alt style1">
+								<div class="inner">
+									<h2 class="major">The Visionaries</h2>
+									<p></p>
+									<section class="features">
+										<center><article>
+											<a href="#" class="image"><img src="{{url_for('static',filename='images/sandhya_reddy.jpg')}}" alt="" /></a>
+											<h3 class="major">DR. A SANDHYA REDDY</h3>
+											<p>Dr. A. Sandhya Reddy is the convenor of Communicando. She has a doctorate in English with specialization in American Literature and is an Associate Professor in the department of Maths and Humanities . With 24 years of teaching experience she has always been a student-friendly teacher. She is truly a friend, philosopher and guide to all the students. 
+Communicando and all its other  wings were established under her guidance and leadership. She always encourages her students to find their creative self and explore their latent potential. She has always given the students direction and encouraged them to take the club to scale great heights and today Communicando stands where it is only because of her guidance . 
+New ideas and enthusiastic students are always welcomed in her cabin. She is the backbone of the club and a mother figure to all the students.
+</p>
+											<!--<a href="{{url_for('about')}}#Cbitmun" class="special">Learn more</a>-->
+										</article></center>
+
+										<span></span>
+											<article>
+											<a href="#" class="image"><img src="{{url_for('static',filename='images/Ananya.jpg')}}" alt=""/></a>
+											<h3 class="major">ANANYA MALIK</h3>
+											<p>Ananya Malik is one of the Chief coordinators of Communicando. She’s an extremely energetic person who enjoys reading and chilling with her dog. She’s a hardworker who loves asking questions and finding answers to them, she is a lover of perfection and enjoys managing people. She does not believe in the concept of giving up no matter how difficult the situation maybe and there are few things she loves more than Communicando. She hopes to take Communicando to the greatest heights and provide highest quality literary events to students all over the city!</p>
+											<!--<a href="{{url_for('about')}}#Cbitmun" class="special">Learn more</a>-->
+
+										</article>
+										<article>
+											<a href="#" class="image"><img src="{{url_for('static',filename='images/Shivank.jpg')}}" alt=""/></a>
+											<h3 class="major">SHIVANK</h3>
+											<p>Shivank Shah is one of the chief coordinators of Communicando. He is a student of Biotechnology and spends his time reading, playing video games like Halo, assasins creed and obsessing over Pokemon and Sherlock.He is a confident and determined leader and gives his 110% in everything he does, he  is a glass half full kind of a person and is adored by his friends and lecturers alike.He owes his love for organising and interacting with new people to Communicando and hopes to make Communicando bigger than ever and make the best college based literary club of the city.</p>
+											<!--<a href="{{url_for('about')}}#Cbitmun" class="special">Learn more</a>-->
+										</article>
+
+
+
+										
+										
+									</section>
+									
+								</div>
+							</section>
+
+					
+
+
+											
+										
+
+
+
+
+										
+										<!--<a href="#" class="special">Learn more</a> -->
+									</div>
+								</div>
+							</section>
+
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Get in touch</h2>
+							<p></p>
+							<form method="post" action="#">
+								<div class="field">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" />
+								</div>
+								<div class="field">
+									<label for="email">Email</label>
+									<input type="email" name="email" id="email" />
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="4"></textarea>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+							<ul class="contact">
+								<li class="fa-home">
+									Adddress<br />
+									CBIT Gandipet<br />
+									Telangana,500032
+								</li>
+								<li class="fa-phone">8008856789</li>
+								<li class="fa-envelope"><a href="mailto:cbitcommunicando@gmail.com?Subject=Hello%20">cbitcommunicando@gmail.com</a></li>
+								<!--<li class="fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
+								<li class="fa-facebook"><a href="#">facebook.com/untitled-tld</a></li> -->
+								<!--<li class="fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>-->
+							</ul>
+							<!--<ul class="copyright">
+								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>-->
+						</div>
+					</section>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="{{url_for('static',filename='js/skel.min.js')}}"></script>
+			<script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+			<script src="{{url_for('static',filename='js/jquery.scrollex.min.js')}}"></script>
+			<script src="{{url_for('static',filename='js/util.js')}}"></script>
+			<!--[if lte IE 8]><script src="/js/ie/respond.min.js"></script><![endif]-->
+			<script src="{{url_for('static',filename='js/main.js')}}"></script>
+			<script src="{{url_for('static',filename='js/d3.js')}}"></script>
+
+			<!--<script>
+		var canvas = d3.selectAll("div")
+        .append("svg")
+        .attr("width", 960)
+        .attr("height", 50);
+
+function circleTransition() { 
+
+    var timeCircle = canvas.append("circle")
+        .attr("fill", "#FFECB3")
+        .attr("r", 15);
+    repeat();
+    
+    function repeat() {
+      timeCircle
+        .attr('cx', 40)      // position the circle at 40 on the x axis
+        .attr('cy', 50)     // position the circle at 250 on the y axis
+        .transition()        // apply a transition
+        .duration(2000)      // apply it over 2000 milliseconds
+        .attr('cx', 920)
+        .attr('fill',"#FFEBEE")     // move the circle to 920 on the x axis
+        .transition()        // apply a transition
+        .duration(2000)      // apply it over 2000 milliseconds
+        .attr('cx', 40)
+        .attr('fill',"#FFECB3")      // return the circle to 40 on the x axis
+        .on("end", repeat);  // when the transition finishes start again
+    };
+
+};
+
+//circleTransition();
+
+					</script>-->
+
+
+	</body>
+</html>
+
+
