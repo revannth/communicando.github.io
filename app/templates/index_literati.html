@@ -44,20 +44,20 @@
 							<nav id="nav">
 								<ul>
 									<li class="current"><a href="{{url_for('literati')}}">Home</a></li>
-									<li>
+									<li class="current">
 										<a href="#events">Events</a>
 										<ul>
-											<li><a href="#">Mr and Ms Literati</a></li>
-											<li><a href="#">WhoDunnit?</a></li>
-											<li><a href="#">A good day to Quiz hard</a></li>
+											<li><a href="#mrandms">Mr and Ms Literati</a></li>
+											<li><a href="#whodunnit">WhoDunnit?</a></li>
+											<li><a href="#quiz">A good day to Quiz hard</a></li>
 											<li>
-												<a href="#">Crossfire</a></li>
+												<a href="#crossfire">Crossfire</a></li>
 												
-													<li><a href="#">Human Library</a></li>
-													<li><a href="#">Matlaata</a></li>
-													<li><a href="#">Kahanikaar</a></li>
+													<li><a href="#humanl">Human Library</a></li>
+													<li><a href="#matlaata">Matlaata</a></li>
+													<li><a href="#kahanikaar">Kahanikaar</a></li>
 										</ul>
-											
+									</li>	
 											
 							</nav>
 		<div id="infinityChart" style="text-align: center;">
@@ -412,9 +412,9 @@ window.onload = function() {
 												<section class="box">
 													<a href="#" class="image featured"><img src="{{url_for('static',filename='images_literati/crossfire.jpg')}}" alt="" /></a>
 													<header>
-														<h3>Crossfire</h3>
+														<h3 id ="crossfire">Crossfire</h3>
 													</header>
-													<p>Crossfire is  . . .</p>
+													<p>To quench your thirst of proving your points, Communicando is back with its elemental competition – Crossfire, a thought provoking two round format that promises to elicit a nonpareil response from all the participants. The first round will test your creativity and reasoning skills while the second round will test the analytical, presentation, argumentation and ability to work as a team. See you there!</p>
 													<footer>
 														<a href="#" class="button alt">Find out more</a>
 													</footer>
@@ -424,9 +424,10 @@ window.onload = function() {
 												<section class="box">
 													<a href="#" class="image featured"><img src="{{url_for('static',filename='images_literati/whodunnit.jpeg')}}" alt="" /></a>
 													<header>
-														<h3>WhoDunnit?</h3>
+														<h3 id="whodunnit">WhoDunnit?</h3>
 													</header>
-													<p>Who Dunnit. . .</p>
+													<p>Wannabe agents,sleuths and detectives, this is your calling. Come here armed with your agile senses and wit. You have a mystery to solve and secrets to fathom. Unleash the unknown at 
+Whodunnit</p>
 													<footer>
 														<a href="#" class="button alt">Find out more</a>
 													</footer>
@@ -436,9 +437,10 @@ window.onload = function() {
 												<section class="box">
 													<a href="#" class="image featured"><img src="{{url_for('static',filename='images_literati/quiz.jpg')}}" alt="" /></a>
 													<header>
-														<h3>Quiz</h3>
+														<h3 id="quiz">A Good Day To Quiz</h3>
 													</header>
-													<p>Quiz is . . .</p>
+													<p>Tons of questions are waiting to be answered. Lots of prizes are to be won. Literati 8.0 brings you the day of unlocking knowledge at the speed of thought.
+So be ready, be smart, be noticed.</p>
 													<footer>
 														<a href="#" class="button alt">Find out more</a>
 													</footer>
@@ -450,9 +452,9 @@ window.onload = function() {
 												<section class="box">
 													<a href="#" class="image featured"><img src="{{url_for('static',filename='images_literati/mrsliterati.png')}}" alt="" /></a>
 													<header>
-														<h3>Mr and Ms Literati</h3>
+														<h3 id="mrandms">Mr and Ms Literati</h3>
 													</header>
-													<p>Mr and Ms Literati is . . .</p>
+													<p>The titular event of literati, Mr & Miss Literati, better described as the battle of wits is our own twist for pageants. Our challenges bring out and test your true personality, spontaneity, creativity and of course your wits.Sharpen your swords and claim the throne!</p>
 													<footer>
 														<a href="#" class="button alt">Find out more</a>
 													</footer>
@@ -462,9 +464,9 @@ window.onload = function() {
 												<section class="box">
 													<a href="#" class="image featured"><img src="{{ url_for('static',filename='images_literati/kahanikaar.png')}}" alt="" /></a>
 													<header>
-														<h3>Kahanikaar</h3>
+														<h3 id="kahanikaar">Kahanikaar</h3>
 													</header>
-													<p>Kahanikaar is . . .</p>
+													<p>Kahanikaar is a hindi event for storytellers out there . Each word plays an important part in weaving a story and this event tests the ability to imagine and create  stories on spot with random words thrown your way</p>
 													<footer>
 														<a href="#" class="button alt">Find out more</a>
 													</footer>
@@ -474,9 +476,10 @@ window.onload = function() {
 												<section class="box">
 													<a href="#" class="image featured"><img src="{{url_for('static',filename='images_literati/matlaata.png')}}" alt="" /></a>
 													<header>
-														<h3>Matlaata</h3>
+														<h3 id="matlaata">Matlaata</h3>
 													</header>
-													<p>Matlaata is . . .</p>
+													<p>"Desha bhashalandu telugu lessa" 
+This proverb defines Telugu as the greatest language, so why shouldn't it get the best event possible! Communicando presents MATLAATA, an event that will test your wit, make you compete and be a hypocrite. Intriguing, isn't it?</p>
 													<footer>
 														<a href="#" class="button alt">Find out more</a>
 													</footer>
@@ -489,9 +492,9 @@ window.onload = function() {
 											<section class="box">
 												<a href="#" class="image featured"><img src="{{ url_for('static',filename='images_literati/human_library.jpg')}}" alt="" /></a>
 												<header>
-													<h3>Human Library</h3>
+													<h3 id="humanl">Human Library</h3>
 												</header>
-												<p>Human Library is </p>
+												<p>Books always have a profound impact to its readers, but what if you could talk to them? Making taking to books a reality, Human Library gives you an opportunity to interact with, and truly understand a book. Come to Human library at CBIT, and borrow people for a change.</p>
 												<footer>
 													<a href="#" class="button alt">Find out more</a>
 												</footer>
@@ -554,7 +557,7 @@ window.onload = function() {
 					<section id="footer" class="container">
 						<div class="row">
 							<div class="8u 12u(mobile)">
-								<section>
+								<!--<section>
 									<header>
 										<h2>Important Dates</h2>
 									</header>
@@ -585,11 +588,11 @@ window.onload = function() {
 											<p>Feugiat sed tempus blandit tempus adipiscing nisl lorem ipsum dolor sit amet dolore.</p>
 										</li>
 									</ul>
-								</section>
+								</section>-->
 							</div>
 
 						</div>
-
+							
 
 
 								<!-- Copyright -->
