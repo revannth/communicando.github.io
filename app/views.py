@@ -31,6 +31,6 @@ def ourteamsen():
 	return render_template('Our_team2.html')
 
 ## SSL
-@app.route('/.well-known/acme-challenge/X2Pkr_LnjjzoSyRBs21vOhGdJjR_UfnsC0yW7e_20e0')
+@app.route('/.well-known/acme-challenge/F-8p_89nhmwhcw0esSKdOGoxLWx53vtZduj9XSaT_b4')
 def ssl():
-	return 'X2Pkr_LnjjzoSyRBs21vOhGdJjR_UfnsC0yW7e_20e0.cv6qm5th8axNzQZckSVY86wzXXt95VRO0ZVL2Uy0T1E'
+	return 'F-8p_89nhmwhcw0esSKdOGoxLWx53vtZduj9XSaT_b4.cv6qm5th8axNzQZckSVY86wzXXt95VRO0ZVL2Uy0T1E'
