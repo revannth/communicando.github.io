@@ -16,6 +16,9 @@ def home():
 	return render_template('index.html')
 
 
+@app.route('/error')
+def error():
+	return render_template('404.html')
 @app.route('/about')
 def about():
 	return render_template('about.html')
@@ -29,6 +32,11 @@ def ourteam():
 @app.route('/seniorcoords')
 def ourteamsen():
 	return render_template('Our_team2.html')
+
+
+@app.route('/register')
+def register():
+	return render_template('register.html')
 
 ## SSL
 @app.route('/.well-known/acme-challenge/F-8p_89nhmwhcw0esSKdOGoxLWx53vtZduj9XSaT_b4')

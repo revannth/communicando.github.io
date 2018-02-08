@@ -155,7 +155,7 @@ window.onload = function() {
 
 			//Grey background color
 
-			d3.select("body").style("background", "#424242");
+			d3.select("body").style("background", "#1D1D25");
 
 			//Reset the overall font size
 			var newFontSize = width * 62.5 / 2000;
@@ -184,7 +184,7 @@ window.onload = function() {
 			//But adjusted for D3 and made to move along a path
 			var ID = 0,	//makes all particles unique
 				counter = 0, //counter for the infinity path
-				colors = [ '#424242', '#A7DBD8', '#E0E4CC', '#F38630', '#FA6900', '#FF4E50', '#F9D423' ], //first colors
+				colors = [ '#1D1D25', '#A7DBD8', '#E0E4CC', '#F38630', '#FA6900', '#FF4E50', '#F9D423' ], //first colors
 				colorMode = "screen", //first blend mode
 				particles = [];
 
@@ -343,28 +343,28 @@ window.onload = function() {
 			function screenMode() {
 				colorMode = "screen";
 				colors = ['#69D2E7', '#A7DBD8', '#E0E4CC', '#F38630', '#FA6900', '#FF4E50', '#F9D423'];
-				d3.select("body").transition().duration(0.5).style("background", "#424242");
+				d3.select("body").transition().duration(0.5).style("background", "#1D1D25");
 				d3.select(".colorStatus").text("Literati 8");
 			}//screenMode
 
 			function noMode() {
 				colorMode = "none";
 				colors = ['#69D2E7', '#A7DBD8', '#E0E4CC', '#F38630', '#FA6900', '#FF4E50', '#F9D423'];
-				d3.select("body").transition().duration(0.5).style("background", "#424242");
+				d3.select("body").transition().duration(0.5).style("background", "#1D1D25");
 				d3.select(".colorStatus").text("Literati 8");
 			}//noMode
 
 			function screenModeRainbow() {
 				colorMode = "screen";
 				colors = ["#2c7bb6", "#00a6ca","#00ccbc","#90eb9d","#ffff8c","#f9d057","#f29e2e","#e76818","#d7191c"];
-				d3.select("body").transition().duration(0.5).style("background", "#424242");
+				d3.select("body").transition().duration(0.5).style("background", "#1D1D25");
 				d3.select(".colorStatus").text("Literati 8");
 			}//multiplyModeRainbow
 
 			function screenModeGreen() {
 				colorMode = "screen";
 				colors = ['#1B676B', '#519548', '#88C425', "#BEF202", "#EAFDE6"];
-				d3.select("body").transition().duration(0.5).style("background", "#424242");
+				d3.select("body").transition().duration(0.5).style("background", "#1D1D25");
 				d3.select(".colorStatus").text("Literati 8");
 			}//screenModeGreen
 
@@ -392,6 +392,9 @@ window.onload = function() {
 
 
 		</script>
+
+		<center><a href="{{ url_for('register') }}" class="button">Register Now</a></center>
+		<br>
 
 
 						<!-- Intro -->
@@ -501,41 +504,36 @@ This proverb defines Telugu as the greatest language, so why shouldn't it get th
 											</section>
 										</div>
 
-							</div>
-						</div>
-								<div class="row">
+									
+						
 										<div class="4u 12u(mobile)">
-											<section class="box">
-												<a href="#" class="image featured"><img src="{{ url_for('static',filename='images_literati/write_angle.png')}}" alt="" /></a>
-												<header>
-													<h3 id="write_angle">Write Angle</h3>
-												</header>
-												<p>Transcendent's flagship writing event, The Write Angle, seeks to bring out the best creative writing talent in students, and give them a platform to display their prowess with the pen. Through a variety of exercises that are both fun and challenging, we will encourage participants to push the limits of creativity.</p>
-												<footer>
-													<a href="#" class="button alt">Find out more</a>
-												</footer>
-											</section>
+												<section class="box">
+													<a href="#" class="image featured"><img src="{{ url_for('static',filename='images_literati/write_angle.png')}}" alt="" /></a>
+													<header>
+														<h3 id="write_angle">Write Angle</h3>
+													</header>
+													<p>Transcendent's flagship writing event, The Write Angle, seeks to bring out the best creative writing talent in students, and give them a platform to display their prowess with the pen. Through a variety of exercises that are both fun and challenging, we will encourage participants to push the limits of creativity.</p>
+													<footer>
+														<a href="#" class="button alt">Find out more</a>
+													</footer>
+												</section>
 										</div>
-
-							</div>
-						</div>
-						<div class="row">
+											
 										<div class="4u 12u(mobile)">
-											<section class="box">
-												<a href="#" class="image featured"><img src="{{ url_for('static',filename='images_literati/write_angle.png')}}" alt="" /></a>
-												<header>
-													<h3 id="informals">Informals</h3>
-												</header>
-												<p>Bored? Exhausted? 
-This is the event you are looking for then. Informals presents fun games which you can enjoy. These are simple, short and innovative games, thrilling to play. Use your skill and luck to win these amazing games and get rewarded</p>
-												<footer>
-													<a href="#" class="button alt">Find out more</a>
-												</footer>
-											</section>
+												<section class="box">
+													<a href="#" class="image featured"><img src="{{url_for('static',filename='images_literati/informals.jpg')}}" alt="" /></a>
+													<header>
+														<h3 id="informals">Informals</h3>
+													</header>
+													<p>Bored? Exhausted? 
+This is the event you are looking for then. Informals presents fun games which you can enjoy. These are simple, short and innovative games, thrilling to play. Use your skill and luck to win these amazing games and get rewarded<</p>
+													<footer>
+														<a href="#" class="button alt">Find out more</a>
+													</footer>
+												</section>
+											</div>
 										</div>
-
-							</div>
-						</div>
+									
 						<div class="row">
 							<div class="12u">
 
@@ -631,7 +629,7 @@ This is the event you are looking for then. Informals presents fun games which y
 								<!-- Copyright -->
 									<div id="copyright">
 										<ul class="links">
-											<li>&copy; <a href="{{url_for('home')}}"">Communicando. All rights reserved.</a></li><li>Design: <a href="https://twitter.com/therealrevannth">@revannth</a></li>
+											<li>&copy; <a href="{{url_for('home')}}"">Communicando. All rights reserved.</a></li><li>Design: <a href="https://twitter.com/therealrevannth">Revannth</a>&nbsp; <a href="https://www.instagram.com/snehaa_l/?hl=en">Sneha</a></li>
 										</ul>
 									</div>
 
