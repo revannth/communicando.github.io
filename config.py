@@ -12,11 +12,11 @@ SQLALCHEMY_MIGRATE_REPO = os.path.join(BASE_DIR, 'db_repository')
 
 
 #Mail Details(Will go in as Environment Varialbles)
-MAIL_SERVER='smtp.googlemail.com'
+'''MAIL_SERVER='smtp.googlemail.com'
 MAIL_PORT=587
 MAIL_USE_TLS=True
 MAIL_USERNAME = 'noreplycommunicando@gmail.com'
-MAIL_PASSWORD = 'Revanth@1'
+MAIL_PASSWORD = 'Revanth@1'''
 #SQLALCHEMY_MIGRATE_REPO = os.environ['HEROKU_POSTGRESQL_PINK_URL']
 
 SQL_TRACK_MODIFICATIONS = True
