@@ -10,6 +10,7 @@ class Participant(db.Model):
 	college = db.Column(db.String(240),nullable=False)
 	mobile = db.Column(db.Integer)
 	event = db.Column(db.String(10),nullable=False)
+	participant_id = db.Column(db.Integer,primary_key=True)
 
 
 class Login(UserMixin,db.Model):

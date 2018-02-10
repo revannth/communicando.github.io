@@ -369,26 +369,45 @@ window.onload = function() {
         d3.select("body").transition().duration(0.5).style("background", "#F8E8E8");
         d3.select(".colorStatus").text("Literati 8");
       }//multiplyModePurple
-
-
-
     </script>
-
-  
-
    </div>
-   <div class="main-wrapper">
-    <center><h2 style="font-size: 400%">Registration Form</h2></center>
-    <div class="container">
+   
+    <div id="main-wrapper">
+          <div class="container">
+            <center><h2 style="font-size: 400%">Registration Form</h2></center>
+            <div class="row">
+              <div class="12u">
+    
+   
       
-      <div class="row">
-        <form action="POST" >
+        <form action="{{url_for('send_email')}}" method="POST" >
           <br>
-          <h2>First Name</h2><input type="Text" id="Name" value="Name">
+          <h2>Name</h2><input type="Text" id="Name" name="Name" value="Name">
+          <br>
+          <h2>Email ID</h2><input type="Text" id="Email" name="Email" value="Name">
+          <br>
+          <h2>College Name</h2><input type="Text" id="College" name="College" value="Name">
+          <br>
+          <h2>Mobile Number</h2><input type="Text" id="Mobile" name="Mobile" value="Name">
+          <br>
+          <h2>Event</h2><select id="Event" name="Event">
+            <option value="Mrms">Mr. and Ms. Literati</option>
+            <option value="Cros">CrossFire</option>
+            <option value="Whod">Whodunnit</option>
+            <option value="Quiz">A Good Day to Quiz Hard</option>
+            <option value="Kaha">Kahanikaar</option>
+            <option value="Matl">Matlaata</option>
+            <option value="Huma">Human Library</option>
+            <option value="Writ">Write Angle</option>
+            <option value="Info">Informals</option>
+          </select>
+          <br>
+          <button type="submit" value="Submit">Send</button> 
         </form>
       </div>
     </div>
   </div>
+</div>
 
 
       <!-- Footer -->
