@@ -6,12 +6,14 @@ from flask_login import UserMixin
 
 class Participant(db.Model):
 	name = db.Column(db.String(128),nullable=False)
-	email = db.Column(db.String(128),unique=True,nullable=False)
+	email = db.Column(db.String(128),nullable=False)
 	college = db.Column(db.String(240),nullable=False)
 	mobile = db.Column(db.String(15))
 	event = db.Column(db.String(50),nullable=False)
 	participant_id = db.Column(db.Integer,primary_key=True)
-
+	regnum = db.Column(db.String(120),unique=True)
+	experience = db.Column(db.Text)
+	hear = db.Column(db.String(30))
 
 class Login(UserMixin,db.Model):
 	id = db.Column(db.Integer,primary_key = True)
