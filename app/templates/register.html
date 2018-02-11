@@ -382,24 +382,24 @@ window.onload = function() {
       
         <form action="{{url_for('send_email')}}" method="POST" >
           <br>
-          <h2>Name</h2><input type="Text" id="Name" name="Name" value="Name">
+          <h2>Name</h2><input type="Text" id="Name" name="Name" placeholder="Name" required="">
           <br>
-          <h2>Email ID</h2><input type="Text" id="Email" name="Email" value="Name">
+          <h2>Email ID</h2><input type="email" id="Email" name="Email" placeholder="Email" required="">
           <br>
-          <h2>College Name</h2><input type="Text" id="College" name="College" value="Name">
+          <h2>College Name</h2><input type="Text" id="College" name="College" placeholder="College Name" required="">
           <br>
-          <h2>Mobile Number</h2><input type="Text" id="Mobile" name="Mobile" value="Name">
+          <h2>Mobile Number</h2><input type="Text" id="Mobile" name="Mobile" placeholder="Mobile" required="">
           <br>
-          <h2>Event</h2><select id="Event" name="Event">
-            <option value="Mrms">Mr. and Ms. Literati</option>
-            <option value="Cros">CrossFire</option>
-            <option value="Whod">Whodunnit</option>
-            <option value="Quiz">A Good Day to Quiz Hard</option>
-            <option value="Kaha">Kahanikaar</option>
-            <option value="Matl">Matlaata</option>
-            <option value="Huma">Human Library</option>
-            <option value="Writ">Write Angle</option>
-            <option value="Info">Informals</option>
+          <h2>Event</h2><select id="Event" name="Event" required="">
+            <option value="Mr. and Ms. Literati">Mr. and Ms. Literati</option>
+            <option value="CrossFire">CrossFire</option>
+            <option value="Whodunnit">Whodunnit</option>
+            <option value="A Good Day to Quiz Hard">A Good Day to Quiz Hard</option>
+            <option value="Kahanikaar">Kahanikaar</option>
+            <option value="Matlaata">Matlaata</option>
+            <option value="Human Library">Human Library</option>
+            <option value="Write Angle">Write Angle</option>
+            <option value="Informals">Informals</option>
           </select>
           <br>
           <button type="submit" value="Submit">Send</button> 
@@ -475,6 +475,17 @@ window.onload = function() {
       <script src="{{url_for('static',filename='assets_literati/js/util.js')}}"></script>
       <!--[if lte IE 8]><script src="assets_literati/js/ie/respond.min.js"></script><![endif]-->
       <script src="{{url_for('static',filename='assets_literati/js/main.js')}}"></script>
+
+      <script type="text/javascript">
+        
+        var Emai_l = getElementById('Email');
+        var valid = /^[a-z]{1,20}\d{0,5}\@[a-z]{2,10}\.[a-z]{2,3}$/;
+
+        if(Emai_l.match(valid))
+            console.log("Valid Email entered");
+        else
+            alert("Enter a Valid Email Id");
+      </script>
 
   </body>
 </html>
