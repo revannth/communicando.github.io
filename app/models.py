@@ -9,7 +9,7 @@ class Participant(db.Model):
 	email = db.Column(db.String(128),unique=True,nullable=False)
 	college = db.Column(db.String(240),nullable=False)
 	mobile = db.Column(db.String(15))
-	event = db.Column(db.String(11),nullable=False)
+	event = db.Column(db.String(50),nullable=False)
 	participant_id = db.Column(db.Integer,primary_key=True)
 
 
