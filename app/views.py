@@ -9,7 +9,7 @@ import random
 
 
 links = {'Human Library':'https://cdn.discordapp.com/attachments/412220459002888203/412221165831192579/Human_Library_poster.png','Write Angle':'https://cdn.discordapp.com/attachments/412220459002888203/412221167009529871/2018-02-09-PHOTO-00272147.jpg','CrossFire':'https://cdn.discordapp.com/attachments/412220459002888203/412221174739894272/finalcross.jpg','Kahanikaar':'https://cdn.discordapp.com/attachments/412220459002888203/412221174756671489/kahaani_final_with_lanscape_mode-1.jpg','Matlaata':'https://cdn.discordapp.com/attachments/412220459002888203/412221174999941120/maatlalata_land.jpg','Mr. and Ms. Literati':'https://cdn.discordapp.com/attachments/412220459002888203/412221176082071552/Anukrutis.jpg','Informals':'https://cdn.discordapp.com/attachments/412220459002888203/412221176417615883/Informal_Poster_Final.jpg','Whodunnit':'https://cdn.discordapp.com/attachments/412220459002888203/412221189587730443/IMG-20180210-WA0004.jpg','A Good Day to Quiz Hard':'https://cdn.discordapp.com/attachments/412220459002888203/412223889180065792/Literati1-page-001.jpg'}
-nums = {'Mr. and Ms. Literati':2,'CrossFire':3,'Whodunnit':4,'A Good Day to Quiz Hard':5,'Kahanikaar':6,'Matlaata':7,'Human Library':8,'Write Angle':9,'Informals':1}
+nums = {'Mr. and Ms. Literati':2,'CrossFire':3,'Whodunnit':4,'A Good Day to Quiz Hard':5,'Kahanikaar':6,'Matlaata':7,'Human Library':8,'Write Angle':9,'Informals':1,'Open Mic':11}
 def send_asyncemail(app,msg):
 	with app.app_context():
 		mail.send(msg)
