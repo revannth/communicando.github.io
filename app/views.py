@@ -47,10 +47,10 @@ def send_email():
 	return render_template('confirmation.html')
 	
 
-
-@app.route('/email')
+#Email view for verifying outlook of the Mail template
+'''@app.route('/email')
 def email():
-	return render_template('hero.html')
+	return render_template('hero.html')'''
 #Just Views
 
 @app.route('/error')
