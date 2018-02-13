@@ -33,28 +33,85 @@
           letter-spacing: -0.035em;
           margin: 0 0 1em 0;
         }
+
+      
+       
+        @media (min-width: 858px) {
+          h1 {
+            font-size: 600%;
+          }
+        }
+
+        @media (min-width: 780px) {
+          h1 {
+            font-size: 600%;
+          }
+        }
+
+        @media (min-width: 702px) {
+          h1 {
+            font-size: 600%;
+          }
+        }
+
+        @media (min-width: 724px) {
+          h1 {
+            font-size: 600%;
+          }
+        }
+
+        @media (max-width: 623px) {
+          h1 {
+            font-size: 200%;
+          }
+        }
+      }
+
     </style>
 
   </head>
   <body class="homepage">
     <div id="page-wrapper">
-    <br>           
+
+
+            <!-- Nav -->
+              <nav id="nav" >
+                <ul>
+                  <li class="current"><a href="{{url_for('home')}}">Home</a></li>
+                  <li class="current">
+                    <a href="#events">Events</a>
+                    <ul>
+                      <li><a href="#mrandms">Mr and Ms Literati</a></li>
+                      <li><a href="#whodunnit">WhoDunnit?</a></li>
+                      <li><a href="#quiz">A good day to Quiz hard</a></li>
+                      <li>
+                        <a href="#crossfire">Crossfire</a></li>
+                        
+                          <li><a href="#humanl">Human Library</a></li>
+                          <li><a href="#matlaata">Matlaata</a></li>
+                          <li><a href="#kahanikaar">Kahanikaar</a></li>
+                    </ul>
+                  </li> 
+                      
+              </nav>
+              <br>
+              <br>
+              <br>
+
     <div id="infinityChart" style="text-align: center;">
       <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
-<h2 style="font-size: 500%;">Literati
+<h1 style="color:#FFFFFF;">Literati
   <span
      class="txt-rotate"
      data-period="2000"
-     data-rotate='[ "8.0", "Infinity", "Eight"]'></span>
-</h2>
-    </div>
-  </div>
+     data-rotate='[ "8.0", "Infinity", "Eight","on 23rd and 24th"]'></span>
+</h1>
 <script>
 var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
   this.loopNum = 0;
-  this.period = parseInt(period, 10) || 2000;
+  this.period = parseInt(period, 10) || 2;
   this.txt = '';
   this.tick();
   this.isDeleting = false;
@@ -73,7 +130,7 @@ TxtRotate.prototype.tick = function() {
   this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
   var that = this;
-  var delta = 300 - Math.random() * 100;
+  var delta = 30 - Math.random() * 10;
 
   if (this.isDeleting) { delta /= 2; }
 
@@ -106,9 +163,9 @@ window.onload = function() {
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
   document.body.appendChild(css);
 };
-
 </script>
 
+</div>
 
     <script language="javascript" type="text/javascript">
 
@@ -195,7 +252,7 @@ window.onload = function() {
       function runInfinity() {
 
         //Create new particles
-        for (var j = 0; j < Math.round(Math.random()*16); j++) spawn(infinityPath[counter].x, infinityPath[counter].y);
+        for (var j = 0; j < Math.round(Math.random()*5); j+=j/2) spawn(infinityPath[counter].x, infinityPath[counter].y);
 
         //Remove non-alive particles
         particles = particles.filter(function(d) { return d.alive; });
@@ -227,12 +284,12 @@ window.onload = function() {
         //EXIT
         circleGroup.exit().remove();
 
-        counter = (counter + 1)%infinityPath.length;
+        counter = (counter + 4)%infinityPath.length;
 
       }//runInfinity
 
       //Create an interval that runs along the infinity path
-      var loopInfinity = setInterval(runInfinity , 0.5);
+      var loopInfinity = setInterval(runInfinity , 2.0);
 
       ///////////////////////////////////////////////////////////////////////////
       /////////////// Functions to create and move the particles ////////////////
@@ -369,7 +426,11 @@ window.onload = function() {
         d3.select("body").transition().duration(0.5).style("background", "#F8E8E8");
         d3.select(".colorStatus").text("Literati 8");
       }//multiplyModePurple
+
+
+
     </script>
+
    </div>
    
     <div id="main-wrapper">
@@ -409,7 +470,7 @@ window.onload = function() {
             <option value="Facebook">Facebook</option>
             <option value="From a Friend">From a Friend</option>
             <option value="Whatsapp">Whatsapp</option>
-            <option value="Posters around campus">Posters around Campus</option>
+            <option value="Posters around campus">Posters around the Campus</option>
             <option value="Website">Website</option>
             <option value="Other">Other</option>
           </select>
@@ -433,14 +494,14 @@ window.onload = function() {
                   </header>
                   <ul class="dates">
                     <li>
-                      <span class="date">Jan <strong>27</strong></span>
-                      <h3><a href="#">Lorem dolor sit amet veroeros</a></h3>
-                      <p>Ipsum dolor sit amet veroeros consequat blandit ipsum phasellus lorem consequat etiam.</p>
+                      <span class="date">February<strong>27</strong></span>
+                      <h3><a href="#">Literati Day 1</a></h3>
+                      <p></p>
                     </li>
                     <li>
-                      <span class="date">Jan <strong>23</strong></span>
-                      <h3><a href="#">Ipsum sed blandit nisl consequat</a></h3>
-                      <p>Blandit phasellus lorem ipsum dolor tempor sapien tortor hendrerit adipiscing feugiat lorem.</p>
+                      <span class="date">February<strong>28</strong></span>
+                      <h3><a href="#">Literati Day 2</a></h3>
+                      <p></p>
                     </li>
                     <li>
                       <span class="date">Jan <strong>15</strong></span>

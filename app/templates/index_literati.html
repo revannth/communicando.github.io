@@ -33,6 +33,38 @@
 					letter-spacing: -0.035em;
 					margin: 0 0 1em 0;
 				}
+
+			
+				@media (min-width: 858px) {
+					h2 {
+						font-size: 600%;
+					}
+				}
+
+				@media (min-width: 780px) {
+					h2 {
+						font-size: 600%;
+					}
+				}
+
+				@media (min-width: 702px) {
+					h2 {
+						font-size: 600%;
+					}
+				}
+
+				@media (min-width: 724px) {
+					h2 {
+						font-size: 600%;
+					}
+				}
+
+				@media (max-width: 623px) {
+					h2 {
+						font-size: 200%;
+					}
+
+			}
 		</style>
 
 	</head>
@@ -41,7 +73,7 @@
 
 
 						<!-- Nav -->
-							<nav id="nav">
+							<nav id="nav" >
 								<ul>
 									<li class="current"><a href="{{url_for('home')}}">Home</a></li>
 									<li class="current">
@@ -60,20 +92,24 @@
 									</li>	
 											
 							</nav>
+							<br>
+							<br>
+							<br>
+
 		<div id="infinityChart" style="text-align: center;">
 			<link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
-<h2 style="font-size: 600%;">Literati
+<h2 class="txt-main">Literati
   <span
      class="txt-rotate"
      data-period="2000"
-     data-rotate='[ "8.0", "Infinity", "Eight"]'></span>
+     data-rotate='[ "8.0", "Infinity", "Eight","on 23rd and 24th"]'></span>
 </h2>
 <script>
 var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
   this.loopNum = 0;
-  this.period = parseInt(period, 10) || 2000;
+  this.period = parseInt(period, 10) || 2;
   this.txt = '';
   this.tick();
   this.isDeleting = false;
@@ -92,7 +128,7 @@ TxtRotate.prototype.tick = function() {
   this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
   var that = this;
-  var delta = 300 - Math.random() * 100;
+  var delta = 30 - Math.random() * 10;
 
   if (this.isDeleting) { delta /= 2; }
 
@@ -214,7 +250,7 @@ window.onload = function() {
 			function runInfinity() {
 
 				//Create new particles
-				for (var j = 0; j < Math.round(Math.random()*16); j++) spawn(infinityPath[counter].x, infinityPath[counter].y);
+				for (var j = 0; j < Math.round(Math.random()*5); j+=j/2) spawn(infinityPath[counter].x, infinityPath[counter].y);
 
 				//Remove non-alive particles
 				particles = particles.filter(function(d) { return d.alive; });
@@ -246,12 +282,12 @@ window.onload = function() {
 				//EXIT
 				circleGroup.exit().remove();
 
-				counter = (counter + 1)%infinityPath.length;
+				counter = (counter + 4)%infinityPath.length;
 
 			}//runInfinity
 
 			//Create an interval that runs along the infinity path
-			var loopInfinity = setInterval(runInfinity , 0.5);
+			var loopInfinity = setInterval(runInfinity , 2.0);
 
 			///////////////////////////////////////////////////////////////////////////
 			/////////////// Functions to create and move the particles ////////////////
@@ -418,9 +454,9 @@ window.onload = function() {
 														<h3 id ="crossfire">Crossfire</h3>
 													</header>
 													<p>To quench your thirst of proving your points, Communicando is back with its elemental competition – Crossfire, a thought provoking two round format that promises to elicit a nonpareil response from all the participants. The first round will test your creativity and reasoning skills while the second round will test the analytical, presentation, argumentation and ability to work as a team. See you there!</p>
-													<footer>
+													<!--<footer>
 														<a href="#" class="button alt">Find out more</a>
-													</footer>
+													</footer>-->
 												</section>
 											</div>
 											<div class="4u 12u(mobile)">
@@ -431,9 +467,9 @@ window.onload = function() {
 													</header>
 													<p>Wannabe agents,sleuths and detectives, this is your calling. Come here armed with your agile senses and wit. You have a mystery to solve and secrets to fathom. Unleash the unknown at 
 Whodunnit</p>
-													<footer>
+													<!--<footer>
 														<a href="#" class="button alt">Find out more</a>
-													</footer>
+													</footer>-->
 												</section>
 											</div>
 											<div class="4u 12u(mobile)">
@@ -444,9 +480,9 @@ Whodunnit</p>
 													</header>
 													<p>Tons of questions are waiting to be answered. Lots of prizes are to be won. Literati 8.0 brings you the day of unlocking knowledge at the speed of thought.
 So be ready, be smart, be noticed.</p>
-													<footer>
+													<!--<footer>
 														<a href="#" class="button alt">Find out more</a>
-													</footer>
+													</footer>-->
 												</section>
 											</div>
 										</div>
@@ -458,9 +494,9 @@ So be ready, be smart, be noticed.</p>
 														<h3 id="mrandms">Mr and Ms Literati</h3>
 													</header>
 													<p>The titular event of literati, Mr & Miss Literati, better described as the battle of wits is our own twist for pageants. Our challenges bring out and test your true personality, spontaneity, creativity and of course your wits.Sharpen your swords and claim the throne!</p>
-													<footer>
+													<!--<footer>
 														<a href="#" class="button alt">Find out more</a>
-													</footer>
+													</footer>-->
 												</section>
 											</div>
 											<div class="4u 12u(mobile)">
@@ -470,9 +506,9 @@ So be ready, be smart, be noticed.</p>
 														<h3 id="kahanikaar">Kahanikaar</h3>
 													</header>
 													<p>Kahanikaar is a hindi event for storytellers out there . Each word plays an important part in weaving a story and this event tests the ability to imagine and create  stories on spot with random words thrown your way</p>
-													<footer>
+													<!--<footer>
 														<a href="#" class="button alt">Find out more</a>
-													</footer>
+													</footer>-->
 												</section>
 											</div>
 											<div class="4u 12u(mobile)">
@@ -483,9 +519,9 @@ So be ready, be smart, be noticed.</p>
 													</header>
 													<p>"Desha bhashalandu telugu lessa" 
 This proverb defines Telugu as the greatest language, so why shouldn't it get the best event possible! Communicando presents MATLAATA, an event that will test your wit, make you compete and be a hypocrite. Intriguing, isn't it?</p>
-													<footer>
+													<!--<footer>
 														<a href="#" class="button alt">Find out more</a>
-													</footer>
+													</footer>-->
 												</section>
 											</div>
 										</div>
@@ -498,9 +534,10 @@ This proverb defines Telugu as the greatest language, so why shouldn't it get th
 													<h3 id="humanl">Human Library</h3>
 												</header>
 												<p>Books always have a profound impact to its readers, but what if you could talk to them? Making taking to books a reality, Human Library gives you an opportunity to interact with, and truly understand a book. Come to Human library at CBIT, and borrow people for a change.</p>
-												<footer>
+												<!--<footer>
 													<a href="#" class="button alt">Find out more</a>
-												</footer>
+												</footer>-->
+
 											</section>
 										</div>
 
@@ -513,9 +550,9 @@ This proverb defines Telugu as the greatest language, so why shouldn't it get th
 														<h3 id="write_angle">Write Angle</h3>
 													</header>
 													<p>Transcendent's flagship writing event, The Write Angle, seeks to bring out the best creative writing talent in students, and give them a platform to display their prowess with the pen. Through a variety of exercises that are both fun and challenging, we will encourage participants to push the limits of creativity.</p>
-													<footer>
+													<!--<footer>
 														<a href="#" class="button alt">Find out more</a>
-													</footer>
+													</footer>-->
 												</section>
 										</div>
 											
@@ -527,9 +564,9 @@ This proverb defines Telugu as the greatest language, so why shouldn't it get th
 													</header>
 													<p>Bored? Exhausted? 
 This is the event you are looking for then. Informals presents fun games which you can enjoy. These are simple, short and innovative games, thrilling to play. Use your skill and luck to win these amazing games and get rewarded.</p>
-													<footer>
+													<!--<footer>
 														<a href="#" class="button alt">Find out more</a>
-													</footer>
+													</footer>-->
 												</section>
 											</div>
 										</div>
@@ -541,9 +578,9 @@ This is the event you are looking for then. Informals presents fun games which y
 													<h3 id="humanl">Open Mic</h3>
 												</header>
 												<p>We are all made up of the stories we lived and telling them leaves you with so much to identify with life. So this year's literati along with the storytelling circuit brings with it, an open mic for all. So come down to tell us your story, the mic is yours!</p>
-												<footer>
+												<!--<footer>
 													<a href="#" class="button alt">Find out more</a>
-												</footer>
+												</footer>-->
 											</section>
 										</div>
 						    </div>
@@ -603,22 +640,22 @@ This is the event you are looking for then. Informals presents fun games which y
 					<section id="footer" class="container">
 						<div class="row">
 							<div class="8u 12u(mobile)">
-								<!--<section>
-									<header>
-										<h2>Important Dates</h2>
+								<section class="date">
+									<header class="major" >
+										<h2 class="date">Important Dates</h2>
 									</header>
 									<ul class="dates">
 										<li>
-											<span class="date">Jan <strong>27</strong></span>
-											<h3><a href="#">Lorem dolor sit amet veroeros</a></h3>
-											<p>Ipsum dolor sit amet veroeros consequat blandit ipsum phasellus lorem consequat etiam.</p>
+											<span class="date">February<strong>22</strong></span>
+											<h3><a href="#">Literati Day 1</a></h3>
+											<p></p>
 										</li>
 										<li>
-											<span class="date">Jan <strong>23</strong></span>
-											<h3><a href="#">Ipsum sed blandit nisl consequat</a></h3>
-											<p>Blandit phasellus lorem ipsum dolor tempor sapien tortor hendrerit adipiscing feugiat lorem.</p>
+											<span class="date">February<strong>23</strong></span>
+											<h3><a href="#">Literati Day 2</a></h3>
+											<p></p>
 										</li>
-										<li>
+										<!--<li>
 											<span class="date">Jan <strong>15</strong></span>
 											<h3><a href="#">Magna tempus lorem feugiat</a></h3>
 											<p>Dolore consequat sed phasellus lorem sed etiam nullam dolor etiam sed amet sit consequat.</p>
@@ -632,9 +669,9 @@ This is the event you are looking for then. Informals presents fun games which y
 											<span class="date">Jan <strong>10</strong></span>
 											<h3><a href="#">Blandit tempus aliquam?</a></h3>
 											<p>Feugiat sed tempus blandit tempus adipiscing nisl lorem ipsum dolor sit amet dolore.</p>
-										</li>
+										</li>-->
 									</ul>
-								</section>-->
+								</section>
 							</div>
 
 						</div>
