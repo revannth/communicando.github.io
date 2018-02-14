@@ -62,6 +62,13 @@ def error():
 def home():
 	return render_template('index.html')
 
+@app.route('/juniorcoord')
+def juniorcoord():
+	return render_template('Our_team1.html')
+@app.route('/seniorcoords')
+def seniorcoords():
+	return render_template('Our_team2.html')
+
 #Literati Handle
 @app.route('/')
 @app.route('/literati')
@@ -75,12 +82,7 @@ def about():
 @app.route('/landing')
 def landing():
 	return render_template('index_landing.html')
-@app.route('/juniorcoord')
-def ourteam():
-	return render_template('Our_team1.html')
-@app.route('/seniorcoords')
-def ourteamsen():
-	return render_template('Our_team2.html')
+
 
 
 
