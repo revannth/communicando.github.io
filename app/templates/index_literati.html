@@ -88,6 +88,7 @@
 													<li><a href="#humanl">Human Library</a></li>
 													<li><a href="#matlaata">Matlaata</a></li>
 													<li><a href="#kahanikaar">Kahanikaar</a></li>
+													<li><a href="#open_mic">Open Mic</a></li>
 										</ul>
 									</li>	
 											
@@ -431,6 +432,7 @@ window.onload = function() {
 
 		<center><a href="{{ url_for('register') }}" class="button">Register Now</a></center>
 		<br>
+		<p><center style="color:#FFFFFF;">Note: To apply for Human Library, please <a href="#">here</a></center></p>
 
 
 						<!-- Intro -->
@@ -575,7 +577,7 @@ This is the event you are looking for then. Informals presents fun games which y
 											<section class="box">
 												<a href="#" class="image featured"><img src="{{ url_for('static',filename='images_literati/open_lib.jpg')}}" alt="" /></a>
 												<header>
-													<h3 id="humanl">Open Mic</h3>
+													<h3 id="open_mic">Open Mic</h3>
 												</header>
 												<p>We are all made up of the stories we lived and telling them leaves you with so much to identify with life. So this year's literati along with the storytelling circuit brings with it, an open mic for all. So come down to tell us your story, the mic is yours!</p>
 												<!--<footer>
@@ -634,6 +636,8 @@ This is the event you are looking for then. Informals presents fun games which y
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
 
 			<!-- Footer -->
 				<div id="footer-wrapper" >
@@ -641,7 +645,7 @@ This is the event you are looking for then. Informals presents fun games which y
 						<div class="row">
 							<div class="8u 12u(mobile)">
 								<section class="date">
-									<header class="major" >
+									<header>
 										<h2 class="date">Important Dates</h2>
 									</header>
 									<ul class="dates">
@@ -685,12 +689,10 @@ This is the event you are looking for then. Informals presents fun games which y
 										</ul>
 									</div>
 
+							
+							</section>
 							</div>
-						</div>
-					</section>
-				</div>
-
-		</div>
+						
 
 		<!-- Scripts -->
 			<script src="{{url_for('static',filename='assets_literati/js/jquery.min.js')}}"></script>

@@ -1715,6 +1715,7 @@
 	#footer-wrapper {
 		position: relative;
 		color: #F7F7F7;
+		background: #263238; 
 	}
 
 		#footer-wrapper:before {
